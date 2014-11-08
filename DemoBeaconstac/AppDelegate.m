@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <CoreLocation/CoreLocation.h>
+#import <Parse/Parse.h>
 
 @interface AppDelegate()<CLLocationManagerDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Parse setApplicationId:@"fLsMazTOqClLzOOhMG79tR1PNxDSgAsqGDnQO4J3"
+                  clientKey:@"oTAZhcXV2Ls0Kk58hSnR1giJ5HCBZgIPumqVQobO"];
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
+    
     // Location Manager is used to register for receiving local notifications when a user enters a Beacon region.
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
