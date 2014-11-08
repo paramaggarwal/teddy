@@ -1,532 +1,1338 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		F76A6FCD1A0BA675005A326B /* Beaconstac_v_0_9_7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A6FCC1A0BA675005A326B /* Beaconstac_v_0_9_7.framework */; };
-		F77FB15719AC89C1003575ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB15619AC89C1003575ED /* Foundation.framework */; };
-		F77FB16119AC89C1003575ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F77FB15F19AC89C1003575ED /* InfoPlist.strings */; };
-		F77FB16319AC89C1003575ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77FB16219AC89C1003575ED /* main.m */; };
-		F77FB16719AC89C1003575ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77FB16619AC89C1003575ED /* AppDelegate.m */; };
-		F77FB16A19AC89C1003575ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77FB16819AC89C1003575ED /* Main.storyboard */; };
-		F77FB16D19AC89C1003575ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77FB16C19AC89C1003575ED /* ViewController.m */; };
-		F77FB16F19AC89C1003575ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77FB16E19AC89C1003575ED /* Images.xcassets */; };
-		F77FB17619AC89C1003575ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB17519AC89C1003575ED /* XCTest.framework */; };
-		F77FB17719AC89C1003575ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB15619AC89C1003575ED /* Foundation.framework */; };
-		F77FB17819AC89C1003575ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB15A19AC89C1003575ED /* UIKit.framework */; };
-		F77FB18019AC89C1003575ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F77FB17E19AC89C1003575ED /* InfoPlist.strings */; };
-		F77FB18219AC89C1003575ED /* DemoBeaconstacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77FB18119AC89C1003575ED /* DemoBeaconstacTests.m */; };
-		F77FB19A19ADF0D2003575ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB19919ADF0D2003575ED /* CoreLocation.framework */; };
-		F77FB19C19ADF0DA003575ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB19B19ADF0DA003575ED /* CoreMotion.framework */; };
-		F77FB1AC19AEFF4B003575ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77FB1AB19AEFF4B003575ED /* SystemConfiguration.framework */; };
-		F79810B21A0217D40091F16F /* VideoAndAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79810B11A0217D40091F16F /* VideoAndAudioViewController.m */; };
-		F79810B41A0251EB0091F16F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79810B31A0251EB0091F16F /* MediaPlayer.framework */; };
-		F79810B61A0251F30091F16F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79810B51A0251F30091F16F /* AVFoundation.framework */; };
-		F7C38E2E19B3922C00199866 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C38E2D19B3922C00199866 /* CoreBluetooth.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F77FB17919AC89C1003575ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F77FB14B19AC89C1003575ED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F77FB15219AC89C1003575ED;
-			remoteInfo = DemoBeaconstac;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		F76A6FCC1A0BA675005A326B /* Beaconstac_v_0_9_7.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Beaconstac_v_0_9_7.framework; sourceTree = "<group>"; };
-		F77FB15319AC89C1003575ED /* DemoBeaconstac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoBeaconstac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F77FB15619AC89C1003575ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F77FB15819AC89C1003575ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F77FB15A19AC89C1003575ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F77FB15E19AC89C1003575ED /* DemoBeaconstac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoBeaconstac-Info.plist"; sourceTree = "<group>"; };
-		F77FB16019AC89C1003575ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F77FB16219AC89C1003575ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F77FB16419AC89C1003575ED /* DemoBeaconstac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoBeaconstac-Prefix.pch"; sourceTree = "<group>"; };
-		F77FB16519AC89C1003575ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F77FB16619AC89C1003575ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F77FB16919AC89C1003575ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F77FB16B19AC89C1003575ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F77FB16C19AC89C1003575ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F77FB16E19AC89C1003575ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F77FB17419AC89C1003575ED /* DemoBeaconstacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoBeaconstacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F77FB17519AC89C1003575ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F77FB17D19AC89C1003575ED /* DemoBeaconstacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoBeaconstacTests-Info.plist"; sourceTree = "<group>"; };
-		F77FB17F19AC89C1003575ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F77FB18119AC89C1003575ED /* DemoBeaconstacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoBeaconstacTests.m; sourceTree = "<group>"; };
-		F77FB19919ADF0D2003575ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F77FB19B19ADF0DA003575ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		F77FB19D19ADF0F5003575ED /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		F77FB1AB19AEFF4B003575ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F79810B01A0217D40091F16F /* VideoAndAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAndAudioViewController.h; sourceTree = "<group>"; };
-		F79810B11A0217D40091F16F /* VideoAndAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAndAudioViewController.m; sourceTree = "<group>"; };
-		F79810B31A0251EB0091F16F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		F79810B51A0251F30091F16F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F7C38E2D19B3922C00199866 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		F77FB15019AC89C1003575ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F79810B61A0251F30091F16F /* AVFoundation.framework in Frameworks */,
-				F79810B41A0251EB0091F16F /* MediaPlayer.framework in Frameworks */,
-				F7C38E2E19B3922C00199866 /* CoreBluetooth.framework in Frameworks */,
-				F77FB1AC19AEFF4B003575ED /* SystemConfiguration.framework in Frameworks */,
-				F77FB19C19ADF0DA003575ED /* CoreMotion.framework in Frameworks */,
-				F76A6FCD1A0BA675005A326B /* Beaconstac_v_0_9_7.framework in Frameworks */,
-				F77FB19A19ADF0D2003575ED /* CoreLocation.framework in Frameworks */,
-				F77FB15719AC89C1003575ED /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F77FB17119AC89C1003575ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F77FB17619AC89C1003575ED /* XCTest.framework in Frameworks */,
-				F77FB17819AC89C1003575ED /* UIKit.framework in Frameworks */,
-				F77FB17719AC89C1003575ED /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		F77FB14A19AC89C1003575ED = {
-			isa = PBXGroup;
-			children = (
-				F77FB15C19AC89C1003575ED /* DemoBeaconstac */,
-				F77FB17B19AC89C1003575ED /* DemoBeaconstacTests */,
-				F77FB15519AC89C1003575ED /* Frameworks */,
-				F77FB15419AC89C1003575ED /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		F77FB15419AC89C1003575ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F77FB15319AC89C1003575ED /* DemoBeaconstac.app */,
-				F77FB17419AC89C1003575ED /* DemoBeaconstacTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F77FB15519AC89C1003575ED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F76A6FCC1A0BA675005A326B /* Beaconstac_v_0_9_7.framework */,
-				F79810B51A0251F30091F16F /* AVFoundation.framework */,
-				F79810B31A0251EB0091F16F /* MediaPlayer.framework */,
-				F7C38E2D19B3922C00199866 /* CoreBluetooth.framework */,
-				F77FB1AB19AEFF4B003575ED /* SystemConfiguration.framework */,
-				F77FB19D19ADF0F5003575ED /* MessageUI.framework */,
-				F77FB19B19ADF0DA003575ED /* CoreMotion.framework */,
-				F77FB19919ADF0D2003575ED /* CoreLocation.framework */,
-				F77FB15619AC89C1003575ED /* Foundation.framework */,
-				F77FB15819AC89C1003575ED /* CoreGraphics.framework */,
-				F77FB15A19AC89C1003575ED /* UIKit.framework */,
-				F77FB17519AC89C1003575ED /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F77FB15C19AC89C1003575ED /* DemoBeaconstac */ = {
-			isa = PBXGroup;
-			children = (
-				F77FB16519AC89C1003575ED /* AppDelegate.h */,
-				F77FB16619AC89C1003575ED /* AppDelegate.m */,
-				F77FB16819AC89C1003575ED /* Main.storyboard */,
-				F77FB16B19AC89C1003575ED /* ViewController.h */,
-				F77FB16C19AC89C1003575ED /* ViewController.m */,
-				F77FB16E19AC89C1003575ED /* Images.xcassets */,
-				F77FB15D19AC89C1003575ED /* Supporting Files */,
-				F79810B01A0217D40091F16F /* VideoAndAudioViewController.h */,
-				F79810B11A0217D40091F16F /* VideoAndAudioViewController.m */,
-			);
-			path = DemoBeaconstac;
-			sourceTree = "<group>";
-		};
-		F77FB15D19AC89C1003575ED /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F77FB15E19AC89C1003575ED /* DemoBeaconstac-Info.plist */,
-				F77FB15F19AC89C1003575ED /* InfoPlist.strings */,
-				F77FB16219AC89C1003575ED /* main.m */,
-				F77FB16419AC89C1003575ED /* DemoBeaconstac-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F77FB17B19AC89C1003575ED /* DemoBeaconstacTests */ = {
-			isa = PBXGroup;
-			children = (
-				F77FB18119AC89C1003575ED /* DemoBeaconstacTests.m */,
-				F77FB17C19AC89C1003575ED /* Supporting Files */,
-			);
-			path = DemoBeaconstacTests;
-			sourceTree = "<group>";
-		};
-		F77FB17C19AC89C1003575ED /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F77FB17D19AC89C1003575ED /* DemoBeaconstacTests-Info.plist */,
-				F77FB17E19AC89C1003575ED /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		F77FB15219AC89C1003575ED /* DemoBeaconstac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F77FB18519AC89C1003575ED /* Build configuration list for PBXNativeTarget "DemoBeaconstac" */;
-			buildPhases = (
-				F77FB14F19AC89C1003575ED /* Sources */,
-				F77FB15019AC89C1003575ED /* Frameworks */,
-				F77FB15119AC89C1003575ED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DemoBeaconstac;
-			productName = DemoBeaconstac;
-			productReference = F77FB15319AC89C1003575ED /* DemoBeaconstac.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F77FB17319AC89C1003575ED /* DemoBeaconstacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F77FB18819AC89C1003575ED /* Build configuration list for PBXNativeTarget "DemoBeaconstacTests" */;
-			buildPhases = (
-				F77FB17019AC89C1003575ED /* Sources */,
-				F77FB17119AC89C1003575ED /* Frameworks */,
-				F77FB17219AC89C1003575ED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F77FB17A19AC89C1003575ED /* PBXTargetDependency */,
-			);
-			name = DemoBeaconstacTests;
-			productName = DemoBeaconstacTests;
-			productReference = F77FB17419AC89C1003575ED /* DemoBeaconstacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		F77FB14B19AC89C1003575ED /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = Mobstac;
-				TargetAttributes = {
-					F77FB15219AC89C1003575ED = {
-						DevelopmentTeam = D6T58JG3XE;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
-					};
-					F77FB17319AC89C1003575ED = {
-						DevelopmentTeam = D6T58JG3XE;
-						TestTargetID = F77FB15219AC89C1003575ED;
-					};
-				};
-			};
-			buildConfigurationList = F77FB14E19AC89C1003575ED /* Build configuration list for PBXProject "DemoBeaconstac" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = F77FB14A19AC89C1003575ED;
-			productRefGroup = F77FB15419AC89C1003575ED /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F77FB15219AC89C1003575ED /* DemoBeaconstac */,
-				F77FB17319AC89C1003575ED /* DemoBeaconstacTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		F77FB15119AC89C1003575ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F77FB16F19AC89C1003575ED /* Images.xcassets in Resources */,
-				F77FB16119AC89C1003575ED /* InfoPlist.strings in Resources */,
-				F77FB16A19AC89C1003575ED /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F77FB17219AC89C1003575ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F77FB18019AC89C1003575ED /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F77FB14F19AC89C1003575ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F77FB16D19AC89C1003575ED /* ViewController.m in Sources */,
-				F77FB16719AC89C1003575ED /* AppDelegate.m in Sources */,
-				F77FB16319AC89C1003575ED /* main.m in Sources */,
-				F79810B21A0217D40091F16F /* VideoAndAudioViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F77FB17019AC89C1003575ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F77FB18219AC89C1003575ED /* DemoBeaconstacTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F77FB17A19AC89C1003575ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F77FB15219AC89C1003575ED /* DemoBeaconstac */;
-			targetProxy = F77FB17919AC89C1003575ED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F77FB15F19AC89C1003575ED /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F77FB16019AC89C1003575ED /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F77FB16819AC89C1003575ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F77FB16919AC89C1003575ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F77FB17E19AC89C1003575ED /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F77FB17F19AC89C1003575ED /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		F77FB18319AC89C1003575ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		F77FB18419AC89C1003575ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F77FB18619AC89C1003575ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Release-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Debug-iphoneos",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoBeaconstac/DemoBeaconstac-Prefix.pch";
-				INFOPLIST_FILE = "DemoBeaconstac/DemoBeaconstac-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F77FB18719AC89C1003575ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Release-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Debug-iphoneos",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoBeaconstac/DemoBeaconstac-Prefix.pch";
-				INFOPLIST_FILE = "DemoBeaconstac/DemoBeaconstac-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		F77FB18919AC89C1003575ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoBeaconstac.app/DemoBeaconstac";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoBeaconstac/DemoBeaconstac-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DemoBeaconstacTests/DemoBeaconstacTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F77FB18A19AC89C1003575ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoBeaconstac.app/DemoBeaconstac";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoBeaconstac/DemoBeaconstac-Prefix.pch";
-				INFOPLIST_FILE = "DemoBeaconstacTests/DemoBeaconstacTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		F77FB14E19AC89C1003575ED /* Build configuration list for PBXProject "DemoBeaconstac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F77FB18319AC89C1003575ED /* Debug */,
-				F77FB18419AC89C1003575ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F77FB18519AC89C1003575ED /* Build configuration list for PBXNativeTarget "DemoBeaconstac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F77FB18619AC89C1003575ED /* Debug */,
-				F77FB18719AC89C1003575ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F77FB18819AC89C1003575ED /* Build configuration list for PBXNativeTarget "DemoBeaconstacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F77FB18919AC89C1003575ED /* Debug */,
-				F77FB18A19AC89C1003575ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = F77FB14B19AC89C1003575ED /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>036AEDF60B17BE2FCC3507C2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2A970EA0F3C070091CEDE3BB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F8B999FA7137008F781714F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F8B999FA7137008F781714F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-DemoBeaconstac.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7C8AA28A568057549D0F6448</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-DemoBeaconstac.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-DemoBeaconstac/Pods-DemoBeaconstac.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>869CAADE4DED6269AA47CFFD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E33E82B944C5AE54EC480AAC</string>
+				<string>7C8AA28A568057549D0F6448</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E33E82B944C5AE54EC480AAC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-DemoBeaconstac.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-DemoBeaconstac/Pods-DemoBeaconstac.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EE6E6B73D29A57797E1A29E7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DemoBeaconstac/Pods-DemoBeaconstac-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F76A6FCC1A0BA675005A326B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>Beaconstac_v_0_9_7.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F76A6FCD1A0BA675005A326B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F76A6FCC1A0BA675005A326B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB14A19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB15C19AC89C1003575ED</string>
+				<string>F77FB17B19AC89C1003575ED</string>
+				<string>F77FB15519AC89C1003575ED</string>
+				<string>F77FB15419AC89C1003575ED</string>
+				<string>869CAADE4DED6269AA47CFFD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB14B19AC89C1003575ED</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Mobstac</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>F77FB15219AC89C1003575ED</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>D6T58JG3XE</string>
+						<key>SystemCapabilities</key>
+						<dict>
+							<key>com.apple.BackgroundModes</key>
+							<dict>
+								<key>enabled</key>
+								<string>1</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>F77FB17319AC89C1003575ED</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>D6T58JG3XE</string>
+						<key>TestTargetID</key>
+						<string>F77FB15219AC89C1003575ED</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F77FB14E19AC89C1003575ED</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>F77FB14A19AC89C1003575ED</string>
+			<key>productRefGroup</key>
+			<string>F77FB15419AC89C1003575ED</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F77FB15219AC89C1003575ED</string>
+				<string>F77FB17319AC89C1003575ED</string>
+			</array>
+		</dict>
+		<key>F77FB14E19AC89C1003575ED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F77FB18319AC89C1003575ED</string>
+				<string>F77FB18419AC89C1003575ED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F77FB14F19AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F77FB16D19AC89C1003575ED</string>
+				<string>F77FB16719AC89C1003575ED</string>
+				<string>F77FB16319AC89C1003575ED</string>
+				<string>F79810B21A0217D40091F16F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB15019AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F79810B61A0251F30091F16F</string>
+				<string>F79810B41A0251EB0091F16F</string>
+				<string>F7C38E2E19B3922C00199866</string>
+				<string>F77FB1AC19AEFF4B003575ED</string>
+				<string>F77FB19C19ADF0DA003575ED</string>
+				<string>F76A6FCD1A0BA675005A326B</string>
+				<string>F77FB19A19ADF0D2003575ED</string>
+				<string>F77FB15719AC89C1003575ED</string>
+				<string>2A970EA0F3C070091CEDE3BB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB15119AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F77FB16F19AC89C1003575ED</string>
+				<string>F77FB16119AC89C1003575ED</string>
+				<string>F77FB16A19AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB15219AC89C1003575ED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F77FB18519AC89C1003575ED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>036AEDF60B17BE2FCC3507C2</string>
+				<string>F77FB14F19AC89C1003575ED</string>
+				<string>F77FB15019AC89C1003575ED</string>
+				<string>F77FB15119AC89C1003575ED</string>
+				<string>EE6E6B73D29A57797E1A29E7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DemoBeaconstac</string>
+			<key>productName</key>
+			<string>DemoBeaconstac</string>
+			<key>productReference</key>
+			<string>F77FB15319AC89C1003575ED</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>F77FB15319AC89C1003575ED</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DemoBeaconstac.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F77FB15419AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB15319AC89C1003575ED</string>
+				<string>F77FB17419AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB15519AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F76A6FCC1A0BA675005A326B</string>
+				<string>F79810B51A0251F30091F16F</string>
+				<string>F79810B31A0251EB0091F16F</string>
+				<string>F7C38E2D19B3922C00199866</string>
+				<string>F77FB1AB19AEFF4B003575ED</string>
+				<string>F77FB19D19ADF0F5003575ED</string>
+				<string>F77FB19B19ADF0DA003575ED</string>
+				<string>F77FB19919ADF0D2003575ED</string>
+				<string>F77FB15619AC89C1003575ED</string>
+				<string>F77FB15819AC89C1003575ED</string>
+				<string>F77FB15A19AC89C1003575ED</string>
+				<string>F77FB17519AC89C1003575ED</string>
+				<string>3F8B999FA7137008F781714F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB15619AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB15719AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB15619AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB15819AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB15A19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB15C19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB16519AC89C1003575ED</string>
+				<string>F77FB16619AC89C1003575ED</string>
+				<string>F77FB16819AC89C1003575ED</string>
+				<string>F77FB16B19AC89C1003575ED</string>
+				<string>F77FB16C19AC89C1003575ED</string>
+				<string>F77FB16E19AC89C1003575ED</string>
+				<string>F77FB15D19AC89C1003575ED</string>
+				<string>F79810B01A0217D40091F16F</string>
+				<string>F79810B11A0217D40091F16F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DemoBeaconstac</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB15D19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB15E19AC89C1003575ED</string>
+				<string>F77FB15F19AC89C1003575ED</string>
+				<string>F77FB16219AC89C1003575ED</string>
+				<string>F77FB16419AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB15E19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DemoBeaconstac-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB15F19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB16019AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16019AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16119AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB15F19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB16219AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16319AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB16219AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB16419AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DemoBeaconstac-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16519AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16619AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16719AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB16619AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB16819AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB16919AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16919AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16A19AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB16819AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB16B19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16C19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16D19AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB16C19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB16E19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB16F19AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB16E19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB17019AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F77FB18219AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB17119AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F77FB17619AC89C1003575ED</string>
+				<string>F77FB17819AC89C1003575ED</string>
+				<string>F77FB17719AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB17219AC89C1003575ED</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F77FB18019AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F77FB17319AC89C1003575ED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F77FB18819AC89C1003575ED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F77FB17019AC89C1003575ED</string>
+				<string>F77FB17119AC89C1003575ED</string>
+				<string>F77FB17219AC89C1003575ED</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F77FB17A19AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DemoBeaconstacTests</string>
+			<key>productName</key>
+			<string>DemoBeaconstacTests</string>
+			<key>productReference</key>
+			<string>F77FB17419AC89C1003575ED</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>F77FB17419AC89C1003575ED</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DemoBeaconstacTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F77FB17519AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F77FB17619AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB17519AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB17719AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB15619AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB17819AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB15A19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB17919AC89C1003575ED</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F77FB14B19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F77FB15219AC89C1003575ED</string>
+			<key>remoteInfo</key>
+			<string>DemoBeaconstac</string>
+		</dict>
+		<key>F77FB17A19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F77FB15219AC89C1003575ED</string>
+			<key>targetProxy</key>
+			<string>F77FB17919AC89C1003575ED</string>
+		</dict>
+		<key>F77FB17B19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB18119AC89C1003575ED</string>
+				<string>F77FB17C19AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DemoBeaconstacTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB17C19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB17D19AC89C1003575ED</string>
+				<string>F77FB17E19AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB17D19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DemoBeaconstacTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB17E19AC89C1003575ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F77FB17F19AC89C1003575ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB17F19AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB18019AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB17E19AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB18119AC89C1003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DemoBeaconstacTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77FB18219AC89C1003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB18119AC89C1003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB18319AC89C1003575ED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F77FB18419AC89C1003575ED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F77FB18519AC89C1003575ED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F77FB18619AC89C1003575ED</string>
+				<string>F77FB18719AC89C1003575ED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F77FB18619AC89C1003575ED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E33E82B944C5AE54EC480AAC</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Release-iphoneos</string>
+					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Debug-iphoneos</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F77FB18719AC89C1003575ED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7C8AA28A568057549D0F6448</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Release-iphoneos</string>
+					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Beaconstac-ddtwywannxdxllbaadjmzzdwjuro/Build/Products/Debug-iphoneos</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F77FB18819AC89C1003575ED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F77FB18919AC89C1003575ED</string>
+				<string>F77FB18A19AC89C1003575ED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F77FB18919AC89C1003575ED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DemoBeaconstac.app/DemoBeaconstac</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>DemoBeaconstacTests/DemoBeaconstacTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F77FB18A19AC89C1003575ED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DemoBeaconstac.app/DemoBeaconstac</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DemoBeaconstac/DemoBeaconstac-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DemoBeaconstacTests/DemoBeaconstacTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F77FB19919ADF0D2003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB19A19ADF0D2003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB19919ADF0D2003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB19B19ADF0DA003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreMotion.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreMotion.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB19C19ADF0DA003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB19B19ADF0DA003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F77FB19D19ADF0F5003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MessageUI.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB1AB19AEFF4B003575ED</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F77FB1AC19AEFF4B003575ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77FB1AB19AEFF4B003575ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F79810B01A0217D40091F16F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VideoAndAudioViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F79810B11A0217D40091F16F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VideoAndAudioViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F79810B21A0217D40091F16F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F79810B11A0217D40091F16F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F79810B31A0251EB0091F16F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MediaPlayer.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MediaPlayer.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F79810B41A0251EB0091F16F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F79810B31A0251EB0091F16F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F79810B51A0251F30091F16F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F79810B61A0251F30091F16F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F79810B51A0251F30091F16F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7C38E2D19B3922C00199866</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreBluetooth.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreBluetooth.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F7C38E2E19B3922C00199866</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7C38E2D19B3922C00199866</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>F77FB14B19AC89C1003575ED</string>
+</dict>
+</plist>
