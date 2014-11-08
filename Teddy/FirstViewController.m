@@ -40,24 +40,30 @@
 - (void)setup {
     [[MSLogger sharedInstance]setLoglevel:MSLogLevelVerbose];
     
-    
+    BOOL success = NO;
     if ([self.username isEqualToString:@"param"]) {
         self.teddyNameLabel.text = @"Bos";
         self.teddyImageView.image = [UIImage imageNamed:@"bos"];
         self.teddyMessageLabel.text = @"I need a walk. Let's go out.";
+        
+        success = [Beaconstac setupOrganizationId:79
+                                             userToken:@"e3663f9911a6f1c99c078a09967feaba52d39935"
+                                            beaconUUID:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"
+                                      beaconIdentifier:@"com.beaconstac.param"];
+        
     } else {
         self.teddyNameLabel.text = @"Marco";
         self.teddyImageView.image = [UIImage imageNamed:@"marco"];
         self.teddyMessageLabel.text = @"Don't leave me alone for so long!";
         
+        success = [Beaconstac setupOrganizationId:84
+                                             userToken:@"9e5bc5b1e14fd49ec21d47287e546130b1d286e9"
+                                            beaconUUID:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"
+                                      beaconIdentifier:@"com.beaconstac.dunty"];
     }
     
     // Setup and initialize the Beaconstac SDK
     
-    BOOL success = [Beaconstac setupOrganizationId:84
-                                         userToken:@"9e5bc5b1e14fd49ec21d47287e546130b1d286e9"
-                                        beaconUUID:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"
-                                  beaconIdentifier:@"com.beaconstac"];
     
     if (success) {
         NSLog(@"DemoApp:Successfully saved credentials.");
