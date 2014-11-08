@@ -3,13 +3,13 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'DemoBeaconstac' do
+target 'Teddy' do
 
 pod 'Parse'
 
 end
 
-target 'DemoBeaconstacTests' do
+target 'TeddyTests' do
 
 end
 
