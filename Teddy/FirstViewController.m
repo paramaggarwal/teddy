@@ -185,7 +185,9 @@
 }
 
 - (void)showAlert:(NSString *)title message:(NSString *)message {
-    [[[UIAlertView alloc] initWithTitle:title message:[NSString stringWithFormat:@"%@",message] delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
+    
+    self.teddyMessageLabel.text = [NSString stringWithFormat:@"%@, %@", title, message];
+//    [[[UIAlertView alloc] initWithTitle:title message:[NSString stringWithFormat:@"%@",message] delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
 }
 
 - (void)customAttributeDemo
