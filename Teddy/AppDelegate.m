@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
+#import <Parse/Parse.h>
 
-@interface AppDelegate ()
+@interface AppDelegate() <CLLocationManagerDelegate>
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -17,6 +21,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"fLsMazTOqClLzOOhMG79tR1PNxDSgAsqGDnQO4J3"
+                  clientKey:@"oTAZhcXV2Ls0Kk58hSnR1giJ5HCBZgIPumqVQobO"];
+
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
+
+    // Location Manager is used to register for receiving local notifications when a user enters a Beacon region.
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    
     return YES;
 }
 
@@ -40,6 +56,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// Tells the delegate about the state of the specified region.
+- (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
+{
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    
+    if (state == CLRegionStateInside) {
+        notification.alertBody = [NSString stringWithFormat:@"You are inside region %@", region.identifier];
+    } else if (state == CLRegionStateOutside) {
+        notification.alertBody = [NSString stringWithFormat:@"You are outside region %@", region.identifier];
+    } else {
+        return;
+    }
+    
+    // Registering for receiving local notifications when a user enters a beacon region for iOS 8
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+
 }
 
 @end
