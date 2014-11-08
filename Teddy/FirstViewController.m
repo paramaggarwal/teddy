@@ -85,6 +85,7 @@
 // Tells the delegate a list of beacons in range.
 - (void)beaconsRanged:(NSDictionary *)beaconsDictionary
 {
+    NSLog(@"%@", beaconsDictionary);
 }
 
 // Tells the delegate about the camped on beacon among available beacons.
@@ -98,6 +99,23 @@
 // Tells the delegate when the device exits from the camped on beacon range.
 - (void)exitedBeacon:(id)beacon
 {
+    MSBeacon *beacon1 = (MSBeacon *)beacon;
+    NSNumber *minor = [[beacon1.beaconKey componentsSeparatedByString:@":"] lastObject];
+    
+    if ([minor  isEqual:@4260]) { //marco
+        if ([self.username isEqualToString:@"param"]) {
+            [self showAlert:@"Bye Marco!" message:@""];
+        } else {
+            [self showAlert:@"You are leaving your teddy behind." message:@""];
+        }
+    } else if ([minor isEqual:@9585]) { //bos
+        if ([self.username isEqualToString:@"param"]) {
+            [self showAlert:@"You are leaving your teddy behind." message:@""];
+        } else {
+            [self showAlert:@"Bye Bos!" message:@""];
+        }
+    }
+    
     NSLog(@"DemoApp:Entered exitedBeacon");
     NSLog(@"DemoApp:exitedBeacon: %@", beacon);
     
@@ -106,48 +124,20 @@
 // Tells the delegate that a rule is triggered with corresponding list of actions.
 - (void)ruleTriggeredWithRuleName:(NSString *)ruleName actionArray:(NSArray *)actionArray
 {
-    NSLog(@"DemoApp:Action Array: %@", actionArray);
-    //
-    // actionArray contains the list of actions to trigger for the rule that matched.
-    //
     for (NSDictionary *actionDict in actionArray) {
-        //
-        // meta.action_type can be "popup", "webpage", "media", or "custom"
-        //
         if ([[[actionDict objectForKey:@"meta"]objectForKey:@"action_type"]  isEqual: @"popup"]) {
-            //
-            // Show an alert
-            //
-            NSLog(@"DemoApp:Text Alert action type");
-            NSString *message = [[[actionDict objectForKey:@"meta"]objectForKey:@"params"]objectForKey:@"text"];
-            [[[UIAlertView alloc] initWithTitle:ruleName message:[NSString stringWithFormat:@"%@",message] delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
-            
-        } else if ([[[actionDict objectForKey:@"meta"]objectForKey:@"action_type"]  isEqual: @"webpage"]) {
-            //
-            // Handle webpage by popping up a WebView
-            //
-            NSLog(@"DemoApp:Webpage action type");
-            CGRect screenRect = [[UIScreen mainScreen] bounds];
-            UIWebView *webview=[[UIWebView alloc]initWithFrame:screenRect];
-            NSString *url=[[[actionDict objectForKey:@"meta"]objectForKey:@"params"]objectForKey:@"url"];
-            NSURL *nsurl=[NSURL URLWithString:url];
-            NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
-            [webview loadRequest:nsrequest];
-            
-            [self.view addSubview:webview];
-            
-            // Setting title of the current View Controller
-            self.title = @"Webpage action";
+            NSString *message = [[[actionDict objectForKey:@"meta"] objectForKey:@"params"] objectForKey:@"text"];
+            [self showAlert:ruleName message:message];
             
         } else if ([[[actionDict objectForKey:@"meta"]objectForKey:@"action_type"]  isEqual: @"custom"]) {
-            //
-            // Custom JSON converted to NSDictionary - it's up to you how you want to handle it
-            //
             NSDictionary *params = [[actionDict objectForKey:@"meta"]objectForKey:@"params"];
             NSLog(@"DemoApp:Received custom action_type: %@", params);
-            
         }
     }
+}
+
+- (void)showAlert:(NSString *)title message:(NSString *)message {
+    [[[UIAlertView alloc] initWithTitle:title message:[NSString stringWithFormat:@"%@",message] delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
 }
 
 - (void)customAttributeDemo
