@@ -8,10 +8,13 @@
 
 #import "FirstViewController.h"
 #import <Beaconstac_v_0_9_7/Beaconstac.h>
+#import <Parse/Parse.h>
 
-@interface FirstViewController () <BeaconstacDelegate>
+@interface FirstViewController () <BeaconstacDelegate, UIAlertViewDelegate>
 
 @property Beaconstac *beaconstac;
+@property NSString *username;
+@property UITextField *loginField;
 
 @end
 
@@ -21,7 +24,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    if (!self.username) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Enter user name:" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+        self.loginField = [alertView textFieldAtIndex:0];
+        [alertView show];
+    }
+    
+    self.teddyImageView.image = nil;
+    self.teddyNameLabel.text = @"Searching...";
+    self.teddyMessageLabel.text = @"";
+    
+}
+
+- (void)setup {
     [[MSLogger sharedInstance]setLoglevel:MSLogLevelVerbose];
+    
+    
+    if ([self.username isEqualToString:@"param"]) {
+        self.teddyNameLabel.text = @"Bos";
+        self.teddyImageView.image = [UIImage imageNamed:@"bos"];
+        self.teddyMessageLabel.text = @"I need a walk. Let's go out.";
+    } else {
+        self.teddyNameLabel.text = @"Marco";
+        self.teddyImageView.image = [UIImage imageNamed:@"marco"];
+        self.teddyMessageLabel.text = @"Don't leave me alone for so long!";
+        
+    }
     
     // Setup and initialize the Beaconstac SDK
     
@@ -118,6 +147,18 @@
 - (void)customAttributeDemo
 {
     [_beaconstac updateFact:@"female" forKey:@"Gender"];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        self.username = self.loginField.text;
+
+        PFObject *member = [PFObject objectWithClassName:@"Member"];
+        member[@"name"] = self.username;
+        [member saveInBackground];
+        
+        [self setup];
+    }
 }
 
 @end

@@ -10,6 +10,9 @@
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *teddyNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *teddyImageView;
+@property (weak, nonatomic) IBOutlet UILabel *teddyMessageLabel;
 
 @end
 
