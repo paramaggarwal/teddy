@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UITableViewController
 
+@property NSArray *beacons;
 
 @end
 

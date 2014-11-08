@@ -24,4 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.beacons count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (indexPath.row < [self.beacons count]) {
+        cell.textLabel.text = [self.beacons objectAtIndex:indexPath.row];
+    }
+
+    return cell;
+}
+
 @end

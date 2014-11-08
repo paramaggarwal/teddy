@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
+
 #import <Beaconstac_v_0_9_7/Beaconstac.h>
 #import <Parse/Parse.h>
 
@@ -82,33 +84,79 @@
 }
 
 #pragma mark - Beaconstac delegate
+
 // Tells the delegate a list of beacons in range.
 - (void)beaconsRanged:(NSDictionary *)beaconsDictionary
 {
     NSLog(@"%@", beaconsDictionary);
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [beaconsDictionary enumerateKeysAndObjectsUsingBlock:^(NSString *uuid, MSBeacon *beacon, BOOL *stop) {
+
+        NSString *major = [[beacon.beaconKey componentsSeparatedByString:@":"] objectAtIndex:1];
+        NSString *proximity = beacon.isFar ? @"Far" : @"Near";
+
+        NSString *key = [NSString stringWithFormat:@"%@ teddy %@", proximity, major];
+        [array addObject:key];
+        
+        if ([major isEqualToString:@"63738"] && [self.username isEqualToString:@"param"]) {
+            if (!beacon.isFar) {
+                self.teddyImageView.layer.opacity = 1.0f;
+                self.teddyNameLabel.text = @"Bos";
+            } else {
+                self.teddyImageView.layer.opacity = 0.2f;
+                self.teddyNameLabel.text = @"Bye Bos!";
+            }
+        }
+        
+        if ([major isEqualToString:@"54051"] && [self.username isEqualToString:@"dunty"]) {
+            if (!beacon.isFar) {
+                self.teddyImageView.layer.opacity = 1.0f;
+                self.teddyNameLabel.text = @"Marco";
+            } else {
+                self.teddyImageView.layer.opacity = 0.2f;
+                self.teddyNameLabel.text = @"Bye Marco!";
+            }
+        }
+        
+    }];
+    
+    SecondViewController *second = [[self.tabBarController viewControllers] lastObject];
+    second.beacons = array;
+    [second.tableView reloadData];
 }
 
 // Tells the delegate about the camped on beacon among available beacons.
 - (void)campedOnBeacon:(id)beacon amongstAvailableBeacons:(NSDictionary *)beaconsDictionary
 {
-    NSLog(@"DemoApp:Entered campedOnBeacon");
-    NSLog(@"DemoApp:campedOnBeacon: %@, %@", beacon, beaconsDictionary);
-    NSLog(@"DemoApp:facts Dict: %@", _beaconstac.factsDictionary);
+    MSBeacon *myBeacon = (MSBeacon *)beacon;
+    
+    if (!myBeacon.isFar) {
+        self.teddyImageView.layer.opacity = 1.0f;
+    } else {
+        self.teddyImageView.layer.opacity = 0.5f;
+    }
+        
+//    NSLog(@"DemoApp:Entered campedOnBeacon");
+//    NSLog(@"DemoApp:campedOnBeacon: %@, %@", beacon, beaconsDictionary);
+//    NSLog(@"DemoApp:facts Dict: %@", _beaconstac.factsDictionary);
+    
 }
 
 // Tells the delegate when the device exits from the camped on beacon range.
 - (void)exitedBeacon:(id)beacon
 {
     MSBeacon *beacon1 = (MSBeacon *)beacon;
-    NSNumber *minor = [[beacon1.beaconKey componentsSeparatedByString:@":"] lastObject];
+    NSString *minor = [[beacon1.beaconKey componentsSeparatedByString:@":"] lastObject];
     
-    if ([minor  isEqual:@4260]) { //marco
+    
+    if ([minor isEqualToString:@"4260"]) { //marco
         if ([self.username isEqualToString:@"param"]) {
             [self showAlert:@"Bye Marco!" message:@""];
         } else {
             [self showAlert:@"You are leaving your teddy behind." message:@""];
         }
-    } else if ([minor isEqual:@9585]) { //bos
+    } else if ([minor isEqualToString:@"9585"]) { //bos
         if ([self.username isEqualToString:@"param"]) {
             [self showAlert:@"You are leaving your teddy behind." message:@""];
         } else {
@@ -116,8 +164,8 @@
         }
     }
     
-    NSLog(@"DemoApp:Entered exitedBeacon");
-    NSLog(@"DemoApp:exitedBeacon: %@", beacon);
+//    NSLog(@"DemoApp:Entered exitedBeacon");
+//    NSLog(@"DemoApp:exitedBeacon: %@", beacon);
     
 }
 
