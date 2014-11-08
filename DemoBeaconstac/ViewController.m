@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Background.png"]]];
-    self.title = @"Demo Beaconstac";
+    self.title = @"Teddy";
     
     [[MSLogger sharedInstance]setLoglevel:MSLogLevelVerbose];
     

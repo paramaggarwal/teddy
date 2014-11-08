@@ -29,6 +29,10 @@
     // Location Manager is used to register for receiving local notifications when a user enters a Beacon region.
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
+    
+    
+    UIStoryboard *dashBoard = [UIStoryboard storyboardWithName:@"Dashboard" bundle:[NSBundle mainBundle]];
+    self.window.rootViewController = [dashBoard instantiateInitialViewController];
     return YES;
 }
 							
