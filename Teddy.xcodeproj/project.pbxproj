@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C4F6698639F02BB6B74CEE /* libPods-Teddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9117BA6CC8F1C047E84AAF /* libPods-Teddy.a */; };
 		8B9E62541A0E269F0044B771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E62531A0E269F0044B771 /* main.m */; };
 		8B9E62571A0E269F0044B771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E62561A0E269F0044B771 /* AppDelegate.m */; };
 		8B9E625A1A0E269F0044B771 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E62591A0E269F0044B771 /* FirstViewController.m */; };
@@ -17,6 +16,8 @@
 		8B9E62651A0E269F0044B771 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9E62631A0E269F0044B771 /* LaunchScreen.xib */; };
 		8B9E62711A0E269F0044B771 /* TeddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E62701A0E269F0044B771 /* TeddyTests.m */; };
 		8B9E627B1A0E29A60044B771 /* Beaconstac_v_0_9_7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E627A1A0E29A60044B771 /* Beaconstac_v_0_9_7.framework */; };
+		8B9E62831A0F04250044B771 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E62821A0F04250044B771 /* SystemConfiguration.framework */; };
+		8B9E62841A0F04470044B771 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E627E1A0F04060044B771 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		8B9E626F1A0E269F0044B771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9E62701A0E269F0044B771 /* TeddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeddyTests.m; sourceTree = "<group>"; };
 		8B9E627A1A0E29A60044B771 /* Beaconstac_v_0_9_7.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Beaconstac_v_0_9_7.framework; sourceTree = "<group>"; };
+		8B9E627E1A0F04060044B771 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B9E62801A0F04150044B771 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B9E62821A0F04250044B771 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2088483F168AEBE7F62C1CC /* Pods-Teddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teddy/Pods-Teddy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C4F6698639F02BB6B74CEE /* libPods-Teddy.a in Frameworks */,
+				8B9E62841A0F04470044B771 /* CoreLocation.framework in Frameworks */,
+				8B9E62831A0F04250044B771 /* SystemConfiguration.framework in Frameworks */,
 				8B9E627B1A0E29A60044B771 /* Beaconstac_v_0_9_7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +79,9 @@
 		7297C2FDE5B25B31CCFEF397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B9E62821A0F04250044B771 /* SystemConfiguration.framework */,
+				8B9E62801A0F04150044B771 /* Foundation.framework */,
+				8B9E627E1A0F04060044B771 /* CoreLocation.framework */,
 				6D9117BA6CC8F1C047E84AAF /* libPods-Teddy.a */,
 				8B9E627A1A0E29A60044B771 /* Beaconstac_v_0_9_7.framework */,
 			);
@@ -159,11 +167,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B9E62741A0E269F0044B771 /* Build configuration list for PBXNativeTarget "Teddy" */;
 			buildPhases = (
-				F321CEB49D7E237C48FFF8E5 /* Check Pods Manifest.lock */,
 				8B9E624A1A0E269F0044B771 /* Sources */,
 				8B9E624B1A0E269F0044B771 /* Frameworks */,
 				8B9E624C1A0E269F0044B771 /* Resources */,
-				99B5D4CEC52A9E44CF75A7DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,39 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		99B5D4CEC52A9E44CF75A7DE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teddy/Pods-Teddy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F321CEB49D7E237C48FFF8E5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B9E624A1A0E269F0044B771 /* Sources */ = {
@@ -410,7 +383,6 @@
 		};
 		8B9E62751A0E269F0044B771 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2088483F168AEBE7F62C1CC /* Pods-Teddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -425,7 +397,6 @@
 		};
 		8B9E62761A0E269F0044B771 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A0C79FABA76902A61D34332 /* Pods-Teddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

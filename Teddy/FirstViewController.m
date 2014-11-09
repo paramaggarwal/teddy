@@ -10,7 +10,6 @@
 #import "SecondViewController.h"
 
 #import <Beaconstac_v_0_9_7/Beaconstac.h>
-#import <Parse/Parse.h>
 
 @interface FirstViewController () <BeaconstacDelegate, UIAlertViewDelegate>
 
@@ -198,10 +197,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         self.username = self.loginField.text;
-
-        PFObject *member = [PFObject objectWithClassName:@"Member"];
-        member[@"name"] = self.username;
-        [member saveInBackground];
         
         [self setup];
     }

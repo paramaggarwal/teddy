@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <CoreLocation/CoreLocation.h>
-#import <Parse/Parse.h>
 
 @interface AppDelegate() <CLLocationManagerDelegate>
 
@@ -22,9 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [Parse setApplicationId:@"fLsMazTOqClLzOOhMG79tR1PNxDSgAsqGDnQO4J3"
-                  clientKey:@"oTAZhcXV2Ls0Kk58hSnR1giJ5HCBZgIPumqVQobO"];
-
     // Location Manager is used to register for receiving local notifications when a user enters a Beacon region.
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
