@@ -5,8 +5,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Teddy' do
 
-pod 'Parse'
-
 end
 
 target 'TeddyTests' do
