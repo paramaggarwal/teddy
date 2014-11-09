@@ -1,6 +1,6 @@
 ## Teddy - the pet you didn't know you wanted
 
-A physical pet made possible using Estimate beacons, for Mobstac's Bangalore Hackday.
+A physical pet made possible using Estimote beacons, for Mobstac's Bangalore Hackday.
 
 ![What it might look like](https://raw.githubusercontent.com/paramaggarwal/teddy/master/teddy.jpg)
 
@@ -10,7 +10,7 @@ Don't you love teddy bears? We do. But we thought about what a teddy bear can be
 
 You'll fall in love with Teddy. It remembers whom it met, and where it has been. It also tells you if you are not keeping him happy. Forget to take him along? He'll make sure he lets you know.
 
-The idea is that Teddy uses a beacon which anybody with the Teddy app can sense. So when you are near friends, Teddy 'sees' other Teddy's. Meet often? It will become friends. The app is your interface to your teddy. You'll know everything he knows.
+The idea is that Teddy uses a beacon which anybody with the Teddy app can sense. So when you are near friends, Teddy 'sees' other Teddy's. Meet often? It will become friends. The app is your interface to your Teddy. You'll know everything he knows.
 
 Take him to different places and earn check-in points. Make new Teddy friends by meeting them often and unlock achievements! Teddy ages and keeps score, so the more you love it, the more valuable it becomes!
 
@@ -43,7 +43,7 @@ Or if you are saying good bye to a friend with another Teddy, then it says bye t
 
 ![Say bye](https://raw.githubusercontent.com/paramaggarwal/teddy/master/Screenshots/IMG_2634.PNG)
 
-Also, you can look around which other Teddy's are there. THe idea is you can see more about them, for example what conuntries they have been to and say hi! Purely a technical demo here.
+Also, you can look around which other Teddy's are there. The idea is you can see more about them, for example what countries they have been to and say hi! Purely a technical demo here.
 
 ![Around me](https://raw.githubusercontent.com/paramaggarwal/teddy/master/Screenshots/IMG_2635.PNG)
 
